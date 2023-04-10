@@ -5,7 +5,7 @@ import Layout from '@theme/Layout';
 import styles from './index.module.css';
 import Button, {Color} from '../components/Button';
 import Progress from '../components/Progress';
-import useInterval from './useInterval';
+import useInterval from '../hooks/useInterval';
 
 const dueDate = new Date('2023-04-16 08:00')
 const fromDate = new Date('2023-04-04 08:00')
@@ -17,7 +17,6 @@ const calculateProgress = (fromDateInMilliseconds: number, dueDateInMilliseconds
   const total = dueDateInMilliseconds - fromDateInMilliseconds
   const timeElapsed = now - fromDateInMilliseconds;
   const progress = timeElapsed / total * 100
-  console.log({progress, now, fromDateInMilliseconds, dueDateInMilliseconds, total, timeElapsed})
   return progress
 }
 const determineColor = (progress: number): Color => {

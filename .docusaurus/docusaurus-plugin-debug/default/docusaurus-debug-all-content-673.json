@@ -680,7 +680,7 @@
       {
         "type": "jsx",
         "permalink": "/useInterval",
-        "source": "@site/src/pages/useInterval.tsx"
+        "source": "@site/src/pages/useInterval.ts"
       }
     ]
   },
