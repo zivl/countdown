@@ -1,0 +1,73 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+.heroBanner {
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 1rem;
+  text-align: center;
+  font-size: 24px;
+}
+
+.days, .hours, .minutes, .seconds {
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  margin: 0 .2rem;
+  text-align: center;
+  font-size: 24px;
+  background-color: aliceblue;
+  color: black;
+  border-radius: 5px;
+}
+
+.days:after{
+  content: "days";
+  display: block;
+  text-align: center;
+  font-size: 1rem;
+  margin: 0 1em;
+}
+.hours:after{
+  content: "hours";
+  display: block;
+  text-align: center;
+  font-size: 1rem;
+  margin: 0 1em;
+}
+.minutes:after{
+  content: "minutes";
+  display: block;
+  text-align: center;
+  font-size: 1rem;
+  margin: 0 1em;
+}
+.seconds:after{
+  content: "seconds";
+  display: block;
+  text-align: center;
+  font-size: 1rem;
+  margin: 0 1em;
+}

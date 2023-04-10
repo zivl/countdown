@@ -1,0 +1,16 @@
+.progress {
+    height: 24px;
+    box-shadow:none;
+    -webkit-box-shadow:none;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(230,230,230,0.3)),to(rgba(230,230,230,0.8)), color-stop(.2,#fff) );
+    border-radius: 4px;
+}
+
+.progress-bar {
+    height: 24px;
+    text-align: right;
+    border-radius: 4px;
+    /* box-shadow:none; */
+    /* -webkit-box-shadow:none; */
+    /* background: linear-gradient(135deg, #ef0e03 0%, #00ff11 100%); */
+}
