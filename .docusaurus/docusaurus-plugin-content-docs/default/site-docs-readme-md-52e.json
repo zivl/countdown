@@ -1,0 +1,15 @@
+{
+  "unversionedId": "readme",
+  "id": "readme",
+  "title": "readme",
+  "description": "",
+  "source": "@site/docs/readme.md",
+  "sourceDirName": ".",
+  "slug": "/",
+  "permalink": "/countdown/docs/",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "defaultSidebar"
+}

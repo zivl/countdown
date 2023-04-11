@@ -22,7 +22,7 @@
   justify-content: center;
 }
 
-.counter {
+.counter, .nightCounter {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -31,10 +31,19 @@
   font-size: 24px;
 }
 
+.nightCounter {
+  font-size: 18px;
+}
+
+.nightCounter .days, .nightCounter .hours, .nightCounter .minutes, .nightCounter .seconds {
+  margin: 0 .2rem;
+  text-align: center;
+  font-size: 24px;
+  background-color: rgba(0,0,0,.5);
+  color: inherit;
+  border-radius: 5px;
+}
 .days, .hours, .minutes, .seconds {
-  /* display: flex; */
-  /* align-items: center; */
-  /* justify-content: center; */
   margin: 0 .2rem;
   text-align: center;
   font-size: 24px;

@@ -7,10 +7,11 @@ export default {
   "title": "The Passover Countdown",
   "tagline": "",
   "favicon": "img/favicon.ico",
-  "url": "https://your-docusaurus-test-site.com",
-  "baseUrl": "/",
-  "organizationName": "facebook",
-  "projectName": "docusaurus",
+  "url": "https://zivl.github.io",
+  "baseUrl": "/countdown/",
+  "trailingSlash": true,
+  "organizationName": "zivl",
+  "projectName": "countdown",
   "onBrokenLinks": "throw",
   "onBrokenMarkdownLinks": "warn",
   "i18n": {
@@ -25,14 +26,6 @@ export default {
     [
       "classic",
       {
-        "docs": {
-          "sidebarPath": "/Users/zivl/github/countdown/sidebars.js",
-          "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/"
-        },
-        "blog": {
-          "showReadingTime": true,
-          "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/"
-        },
         "theme": {
           "customCss": "/Users/zivl/github/countdown/src/css/custom.css"
         }
@@ -43,13 +36,18 @@ export default {
     "image": "img/docusaurus-social-card.jpg",
     "darkMode": true,
     "navbar": {
-      "title": "Passover Countdown",
+      "title": "",
       "hideOnScroll": false,
       "items": []
     },
+    "colorMode": {
+      "defaultMode": "dark",
+      "disableSwitch": true,
+      "respectPrefersColorScheme": false
+    },
     "footer": {
       "style": "dark",
-      "copyright": "Copyright © 2023 Ziv Levy",
+      "copyright": "Made with ❤️ by Ziv Levy for tired parents like you.",
       "links": []
     },
     "prism": {
@@ -242,11 +240,6 @@ export default {
           }
         }
       ]
-    },
-    "colorMode": {
-      "defaultMode": "light",
-      "disableSwitch": false,
-      "respectPrefersColorScheme": false
     },
     "docs": {
       "versionPersistence": "localStorage",
