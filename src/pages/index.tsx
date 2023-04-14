@@ -54,15 +54,13 @@ const renderer = ({days, hours, minutes, seconds, completed }: {days:number, hou
       </div>;
   }
 };
-const nightRenderer = ({days, hours, minutes, seconds, completed }: {days:number, hours:number, minutes:number, seconds:number, completed:boolean }) => {
+const nightRenderer = ({days, hours, minutes, completed }: {days:number, hours:number, minutes:number, seconds:number, completed:boolean }) => {
   if (completed) {
     return <h2>Done!</h2>;
   } else {
     return <div className={clsx(styles.nightCounter)}>
-      <div className={clsx(styles.days)}>{days}</div>
-      <div className={clsx(styles.hours)}>{hours}</div>
+      <div className={clsx(styles.hours)}>{(days * 24) + hours}</div>
       <div className={clsx(styles.minutes)}>{minutes}</div>
-      <div className={clsx(styles.seconds)}>{seconds}</div>
       </div>;
   }
 };
@@ -82,8 +80,8 @@ export default function Home(): JSX.Element {
       <Button color={determineColor(progress)} label={'They are gone in...'}/>
         <Countdown date={dueDate} renderer={renderer}/>
         <Progress progress={Math.floor(progress)} color={determineColor(progress)} />
-        <h3>✨ Reducing night hours ✨</h3>
-        <Countdown date={dueDate.getTime() - reduceNightHoursBetween(new Date(),dueDate)} renderer={nightRenderer}/>
+        <h3>✨ Total Waking Time Left ✨</h3>
+        <Countdown date={dueDate.getTime() - reduceNightHoursBetween(new Date(),dueDate)} renderer={nightRenderer} daysInHours/>
         <h5>It'll go like that!</h5>
       </main>
     </Layout>
