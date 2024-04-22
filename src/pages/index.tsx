@@ -7,8 +7,8 @@ import Button, {Color} from '../components/Button';
 import Progress from '../components/Progress';
 import useInterval from '../hooks/useInterval';
 
-const dueDate = new Date('2023-04-16 08:00')
-const fromDate = new Date('2023-04-04 08:00')
+const dueDate = new Date('2024-04-30 08:00')
+const fromDate = new Date('2024-04-19 08:00')
 const fromDateInMilliseconds = fromDate.getTime()
 const dueDateInMilliseconds = dueDate.getTime()
 
