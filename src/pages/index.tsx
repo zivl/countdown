@@ -77,7 +77,7 @@ export default function Home(): JSX.Element {
       <link href="https://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet"/>
       <main style={{display: 'flex', alignItems: 'center', flexDirection: 'column'}}>
 
-      <Button color={determineColor(progress)} label={'They are gone in...'}/>
+      <Button color={determineColor(progress)} label={'They are back to school in...'}/>
         <Countdown date={dueDate} renderer={renderer}/>
         <Progress progress={Math.floor(progress)} color={determineColor(progress)} />
         <h3>✨ Total Waking Time Left ✨</h3>
